@@ -1,20 +1,15 @@
 export const COLORS = {
-  white: 'hsl(0deg 0% 100%)',
-  offblack: 'hsl(24deg 5% 6%)',
-  gray: {
-    100: 'hsl(40deg 12% 95%)',
-    300: 'hsl(35deg 8% 80%)',
-    500: 'hsl(30deg 4% 60%)',
-    700: 'hsl(28deg 5% 40%)',
-    900: 'hsl(24deg 6% 16%)',
-  },
-  primary: 'hsl(224deg 30% 40%)',
-  secondary: 'hsl(180deg 34% 37%)',
-  urgent: 'hsl(0deg 55% 54%)',
+  white: 'hsl(30deg 29% 97%)',
+  darkBlue: 'hsl(219deg 43% 16%)',
+  gray: 'hsl(218deg 20% 36%)',
+  cream: 'hsl(30deg 33% 93%)',
+  purple: 'hsl(264deg 100% 69%)',
+  pink: 'hsl(292deg 76% 54%)',
+  orange: 'hsl(31deg 100% 65%)',
 };
 
 export const WEIGHTS = {
-  normal: 400,
+  regular: 400,
   medium: 550,
   bold: 700,
 };
@@ -34,9 +29,3 @@ export const QUERIES = {
       (max-width: ${(BREAKPOINTS.laptopMin - 1) / 16}rem)`,
 };
 
-export const FAMILIES = {
-  serif: '"Crimson Pro", Georgia, serif',
-  sansSerif:
-    '"Helvetica Neue", Helvetica, "Franklin Gothic Medium", "Franklin Gothic", "ITC Franklin Gothic", sans-serif',
-  logo: 'Chomsky',
-};

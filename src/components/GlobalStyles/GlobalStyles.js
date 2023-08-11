@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components/macro';
 
-import { COLORS, WEIGHTS, FAMILIES } from '../../constants';
+import { COLORS, WEIGHTS } from '../../constants';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -50,23 +50,58 @@ table {
 /* DESIGN TOKENS */
 html {
   --color-white: ${COLORS.white};
-  --color-offblack: ${COLORS.offblack};
-  --color-gray-100: ${COLORS.gray[100]};
-  --color-gray-300: ${COLORS.gray[300]};
-  --color-gray-500: ${COLORS.gray[500]};
-  --color-gray-700: ${COLORS.gray[700]};
-  --color-gray-900: ${COLORS.gray[900]};
-  --color-primary: ${COLORS.primary};
-  --color-secondary: ${COLORS.secondary};
-  --color-urgent: ${COLORS.urgent};
+  --color-darkBlue: ${COLORS.darkBlue};
+  --color-gray: ${COLORS.gray};
+  --color-cream: ${COLORS.cream};
+  --color-purple: ${COLORS.purple};
+  --color-pink: ${COLORS.pink};
+  --color-orange: ${COLORS.orange};
 
-  --font-weight-normal: ${WEIGHTS.normal};
+  --font-weight-regular: ${WEIGHTS.regular};
   --font-weight-medium: ${WEIGHTS.medium};
   --font-weight-bold: ${WEIGHTS.bold};
 
-  --font-family-serif: ${FAMILIES.serif};
-  --font-family-sans-serif: ${FAMILIES.sansSerif};
-  --font-family-logo: ${FAMILIES.logo};
+  /* font shorthand follows pattern: 
+  font-style font-weight font-size/line-height font-family */
+  --font-h1-desktop: normal var(--font-weight-regular) 4.5rem/4.875rem Epilogue;
+  --font-h1-tablet: normal var(--font-weight-regular) 3.5rem/4rem Epilogue;
+  --font-h1-mobile: normal var(--font-weight-regular) 2.375rem/2.75rem Epilogue;
+
+  /* h2 desktop bolded also used for callout stats on all viewports */
+  --font-h2-desktop: normal var(--font-weight-regular) 3rem/3.5rem Epilogue;
+  --font-h2-tablet: normal var(--font-weight-regular) 2.5rem/3rem Epilogue;
+  --font-h2-mobile: normal var(--font-weight-regular) 2.5rem/3rem Epilogue;
+
+  /* hm used on quote name */
+  --font-hm: normal var(--font-weight-bold) 1.125rem/2rem Epilogue;
+  /* hs used on callout stats subtitle and quote title/company */
+  --font-hs: normal var(--font-weight-regular) 1rem/1.625rem Epilogue;
+
+  --font-footer: normal var(--font-weight-regular) 0.9375rem/2rem Epilogue;
+
+  --font-body-desktop: normal var(--font-weight-regular) 1.125rem/2rem Epilogue;
+  --font-body-tablet: normal var(--font-weight-regular) 1rem/1.75rem Epilogue;
+  --font-body-mobile: normal var(--font-weight-regular) 1rem/1.75rem Epilogue;
+
+
+
+
+  --font-quote-desktop: normal var(--font-weight-regular) 1.25rem/2.1875rem Epilogue;
+  --font-quote-tablet: normal var(--font-weight-regular) 1.125rem/2rem Epilogue;
+  --font-quote-mobile: normal var(--font-weight-regular) 1.125rem/2rem Epilogue;
+
+
+
+
+  --font-button-header-desktop: normal var(--font-weight-bold) 1rem/2rem Epilogue;
+  --font-button-header-tablet: normal var(--font-weight-bold) 1rem/2rem Epilogue;
+  --font-button-header-mobile: normal var(--font-weight-bold) 0.875rem/1.5rem Epilogue;
+
+
+
+  --font-button-hero: normal var(--font-weight-bold) 1.125rem/2rem Epilogue;
+
+
 }
 
 
