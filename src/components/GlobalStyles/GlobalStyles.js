@@ -83,25 +83,15 @@ html {
   --font-body-tablet: normal var(--font-weight-regular) 1rem/1.75rem Epilogue;
   --font-body-mobile: normal var(--font-weight-regular) 1rem/1.75rem Epilogue;
 
-
-
-
   --font-quote-desktop: normal var(--font-weight-regular) 1.25rem/2.1875rem Epilogue;
   --font-quote-tablet: normal var(--font-weight-regular) 1.125rem/2rem Epilogue;
   --font-quote-mobile: normal var(--font-weight-regular) 1.125rem/2rem Epilogue;
-
-
-
 
   --font-button-header-desktop: normal var(--font-weight-bold) 1rem/2rem Epilogue;
   --font-button-header-tablet: normal var(--font-weight-bold) 1rem/2rem Epilogue;
   --font-button-header-mobile: normal var(--font-weight-bold) 0.875rem/1.5rem Epilogue;
 
-
-
   --font-button-hero: normal var(--font-weight-bold) 1.125rem/2rem Epilogue;
-
-
 }
 
 
