@@ -11,6 +11,7 @@ function Button( {children, className}) {
 
 const ButtonWrapper = styled.button`
   border-radius: 6px;
+  text-align: center;
 `;
 
 export default Button;
