@@ -99,8 +99,6 @@ const QuotedTitle = styled.span`
   color: var(--color-cream);
   text-transform: uppercase;
   letter-spacing: 0.15625rem;
-
 `;
-
 
 export default Testimonial;

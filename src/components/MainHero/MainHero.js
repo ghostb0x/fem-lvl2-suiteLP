@@ -25,7 +25,7 @@ function MainHero() {
         outreach to get more leads for your company.
       </P>
       <HeroButton>Request Beta Access</HeroButton>
-      <HeroImage/>
+      <HeroImage />
     </HeroWrapper>
   );
 }
