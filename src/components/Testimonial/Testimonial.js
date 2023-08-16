@@ -1,29 +1,36 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function Testimonial() {
   return (
     <TestimonialWrapper>
-      <Picture>
-        <source
-          type="image/webp"
-          srcSet="
+      <ImageWrapper>
+        <SmallPicture>
+          <source
+            type="image/webp"
+            srcSet="
           ./assets/image-jeremy-small.webp 1x,
           ./assets/image-jeremy-small@2x.webp 2x
         "
-        />
-        <source
-          type="image/png"
-          srcSet="
+          />
+          <source
+            type="image/png"
+            srcSet="
           ./assets/image-jeremy-small.png 1x,
           ./assets/image-jeremy-small@2x.png 2x
         "
-        />
-        <Image
-          src="./assets/image-jeremy-small.png"
+          />
+          <Image
+            src="./assets/image-jeremy-small.png"
+            alt=""
+          />
+        </SmallPicture>
+        <BlurImage
+          src="./assets/pattern-blur.svg"
           alt=""
         />
-      </Picture>
+      </ImageWrapper>
 
       <CurvedLine
         src="./assets/pattern-curved-line-2.svg"
@@ -52,10 +59,32 @@ const TestimonialWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: var(--color-darkBlue);
+
+  @media ${QUERIES.tabletAndUp} {
+    margin: 273px 40px 0 40px;
+    padding: 0 58px 64px 58px;
+  }
 `;
 
-const Picture = styled.picture`
+const ImageWrapper = styled.div`
   margin-top: -181px;
+
+  position: relative;
+  isolation: isolate;
+`;
+
+const BlurImage = styled.img`
+  display: revert;
+  position: absolute;
+  right: -34%;
+  top: 20%;
+  width: 420px;
+  z-index: 1;
+`;
+
+const SmallPicture = styled.picture`
+  position: relative;
+  z-index: 2;
 `;
 
 const Image = styled.img`
