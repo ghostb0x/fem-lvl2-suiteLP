@@ -48,45 +48,35 @@ const TextWrapper = styled.div`
   @media ${QUERIES.tabletAndUp} {
     position: relative;
     width: 100%;
-    /* grid-template-columns: repeat(4, minmax(0, 1fr));
-    grid-template-rows: repeat(4, minmax(0, 1fr));
-    grid-template-areas:
-      'h1 h1 h1 .'
-      'h1 h1 h1 .'
-      'text text . .'
-      'button button . .';
-  } */
 `;
 
 const H1Wrapper = styled.div`
   padding-top: 28px;
-  grid-area: h1;
 `;
 
-
 const H1 = styled.h1`
-display: inline;
-font: var(--font-h1-mobile);
-color: var(--color-darkBlue);
+  display: inline;
+  font: var(--font-h1-mobile);
+  color: var(--color-darkBlue);
 
-@media ${QUERIES.tabletAndUp} {
-  font: var(--font-h1-tablet);
-  position: relative;
-  z-index: 2;
-  letter-spacing: -0.04863rem;
-}
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-h1-tablet);
+    position: relative;
+    z-index: 2;
+    letter-spacing: -0.04863rem;
+  }
 `;
 
 const H1B = styled.p`
-position: relative;
-font: var(--font-h1-mobile);
-font-weight: var(--font-weight-bold);
-display: inline;
-
-@media ${QUERIES.tabletAndUp} {
-  font: var(--font-h1-tablet);
+  position: relative;
+  font: var(--font-h1-mobile);
   font-weight: var(--font-weight-bold);
-}
+  display: inline;
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-h1-tablet);
+    font-weight: var(--font-weight-bold);
+  }
 `;
 
 const CurvedLine = styled.img`
@@ -104,7 +94,6 @@ const P = styled.p`
   font: var(--font-body-mobile);
   color: var(--color-gray);
   margin-top: 32px;
-  grid-area: text;
 
   @media ${QUERIES.tabletAndUp} {
     font: var(--font-body-tablet);
@@ -119,7 +108,6 @@ const HeroButton = styled(Button)`
   font: var(--font-button-hero);
   background: var(--color-darkBlue);
   color: var(--color-cream);
-  grid-area: button;
 
   &:hover {
     background: linear-gradient(
