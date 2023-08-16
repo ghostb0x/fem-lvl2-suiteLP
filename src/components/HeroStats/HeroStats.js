@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function HeroStats() {
   return (
@@ -25,6 +26,13 @@ const Stats = styled.section`
   display: flex;
   flex-direction: column;
   gap: 32px;
+
+  @media ${QUERIES.tabletAndUp} {
+    margin-top: 128px;
+    flex-direction: row;
+    justify-content: space-around;
+    
+  }
 `;
 
 const Stat = styled.article`

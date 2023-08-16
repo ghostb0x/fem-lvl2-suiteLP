@@ -23,7 +23,6 @@ const HeaderWrapper = styled.header`
 
   @media ${QUERIES.tabletAndUp} {
     padding: 40px 40px 0px 40px;
-    
   }
 `;
 
@@ -39,6 +38,12 @@ const HeaderButton = styled(Button)`
   &:hover {
     background-color: var(--color-darkBlue);
     color: var(--color-white);
+  }
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-button-header-tablet);
+    width: 219px;
+    height: 56px;
   }
 `;
 export default Header;

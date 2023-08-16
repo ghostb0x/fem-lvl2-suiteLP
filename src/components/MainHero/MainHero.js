@@ -28,8 +28,8 @@ function MainHero() {
           outreach to get more leads for your company.
         </P>
         <HeroButton>Request Beta Access</HeroButton>
+        <HeroImage />
       </TextWrapper>
-      <HeroImage />
       <HeroStats />
     </HeroWrapper>
   );
@@ -39,22 +39,23 @@ const HeroWrapper = styled.main`
   padding: 56px 16px 0 16px;
 
   @media ${QUERIES.tabletAndUp} {
-    padding: 80px 40px 0 40px;
-    position: relative;
+    padding: 123px 40px 0 40px;
+    isolation: isolate;
   }
 `;
 
 const TextWrapper = styled.div`
   @media ${QUERIES.tabletAndUp} {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    position: relative;
+    width: 100%;
+    /* grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-template-rows: repeat(4, minmax(0, 1fr));
-    grid-template-areas: 
-    'h1 h1 h1 .'
-    'h1 h1 h1 .'
-    'text text . .'
-    'button button . .'
-  }
+    grid-template-areas:
+      'h1 h1 h1 .'
+      'h1 h1 h1 .'
+      'text text . .'
+      'button button . .';
+  } */
 `;
 
 const H1Wrapper = styled.div`
@@ -62,24 +63,41 @@ const H1Wrapper = styled.div`
   grid-area: h1;
 `;
 
+
+const H1 = styled.h1`
+display: inline;
+font: var(--font-h1-mobile);
+color: var(--color-darkBlue);
+
+@media ${QUERIES.tabletAndUp} {
+  font: var(--font-h1-tablet);
+  position: relative;
+  z-index: 2;
+  letter-spacing: -0.04863rem;
+}
+`;
+
+const H1B = styled.p`
+position: relative;
+font: var(--font-h1-mobile);
+font-weight: var(--font-weight-bold);
+display: inline;
+
+@media ${QUERIES.tabletAndUp} {
+  font: var(--font-h1-tablet);
+  font-weight: var(--font-weight-bold);
+}
+`;
+
 const CurvedLine = styled.img`
   position: absolute;
   top: -30px;
   right: 0px;
   width: 151.5px;
-`;
 
-const H1 = styled.h1`
-  display: inline;
-  font: var(--font-h1-mobile);
-  color: var(--color-darkBlue);
-`;
-
-const H1B = styled.p`
-  position: relative;
-  font: var(--font-h1-mobile);
-  font-weight: var(--font-weight-bold);
-  display: inline;
+  @media ${QUERIES.tabletAndUp} {
+    width: 231px;
+  }
 `;
 
 const P = styled.p`
@@ -87,6 +105,11 @@ const P = styled.p`
   color: var(--color-gray);
   margin-top: 32px;
   grid-area: text;
+
+  @media ${QUERIES.tabletAndUp} {
+    font: var(--font-body-tablet);
+    max-width: 50%;
+  }
 `;
 
 const HeroButton = styled(Button)`
