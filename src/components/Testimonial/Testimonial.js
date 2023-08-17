@@ -76,7 +76,7 @@ function Testimonial() {
   );
 }
 
-const Background = styled.div`
+const Background = styled.section`
   @media ${QUERIES.tabletAndUp} {
     background: linear-gradient(
       180deg,
