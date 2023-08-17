@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/fem-lvl2-suiteLP/static/js/main.4fb4ad4b.js",
+    "main.js": "/fem-lvl2-suiteLP/static/js/main.b9504495.js",
     "index.html": "/fem-lvl2-suiteLP/index.html",
-    "main.4fb4ad4b.js.map": "/fem-lvl2-suiteLP/static/js/main.4fb4ad4b.js.map"
+    "main.b9504495.js.map": "/fem-lvl2-suiteLP/static/js/main.b9504495.js.map"
   },
   "entrypoints": [
-    "static/js/main.4fb4ad4b.js"
+    "static/js/main.b9504495.js"
   ]
 }
