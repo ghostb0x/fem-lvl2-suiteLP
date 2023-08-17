@@ -4,52 +4,66 @@ import { QUERIES } from '../../constants';
 
 function Testimonial() {
   return (
-    <TestimonialWrapper>
-      <ImageWrapper>
-        <SmallPicture>
-          <source
-            type="image/webp"
-            srcSet="
+    <Background>
+      <TestimonialWrapper>
+        <ImageWrapper>
+          <SmallPicture>
+            <source
+              type="image/webp"
+              srcSet="
           ./assets/image-jeremy-small.webp 1x,
           ./assets/image-jeremy-small@2x.webp 2x
         "
-          />
-          <source
-            type="image/png"
-            srcSet="
+            />
+            <source
+              type="image/png"
+              srcSet="
           ./assets/image-jeremy-small.png 1x,
           ./assets/image-jeremy-small@2x.png 2x
         "
-          />
-          <Image
-            src="./assets/image-jeremy-small.png"
+            />
+            <Image
+              src="./assets/image-jeremy-small.png"
+              alt=""
+            />
+          </SmallPicture>
+          <BlurImage
+            src="./assets/pattern-blur.svg"
             alt=""
           />
-        </SmallPicture>
-        <BlurImage
-          src="./assets/pattern-blur.svg"
+        </ImageWrapper>
+
+        <CurvedLine
+          src="./assets/pattern-curved-line-2.svg"
           alt=""
         />
-      </ImageWrapper>
 
-      <CurvedLine
-        src="./assets/pattern-curved-line-2.svg"
-        alt=""
-      />
-
-      <H2>
-        It just <H2B>works.</H2B>
-      </H2>
-      <Quote>
-        “I really like how it is an all-in-one solution that handle
-        many of the tasks that you would normally need separate tools
-        to do the same job. This thing is a miracle worker.”
-      </Quote>
-      <QuotedName>Jeremy Robinson</QuotedName>
-      <QuotedTitle>CMO, Fylo</QuotedTitle>
-    </TestimonialWrapper>
+        <H2>
+          It just <H2B>works.</H2B>
+        </H2>
+        <Quote>
+          “I really like how it is an all-in-one solution that handle
+          many of the tasks that you would normally need separate
+          tools to do the same job. This thing is a miracle worker.”
+        </Quote>
+        <QuotedName>Jeremy Robinson</QuotedName>
+        <QuotedTitle>CMO, Fylo</QuotedTitle>
+      </TestimonialWrapper>
+    </Background>
   );
 }
+
+const Background = styled.div`
+
+  @media ${QUERIES.tabletAndUp} {
+    background: linear-gradient(
+      180deg,
+      var(--color-white) 0%,
+      var(--color-white) 32.99%,
+      var(--color-cream) 33%
+    );
+  }
+`;
 
 const TestimonialWrapper = styled.div`
   margin-top: 237px;

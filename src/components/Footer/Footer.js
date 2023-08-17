@@ -1,5 +1,6 @@
 import React from 'react';
 import { styled } from 'styled-components';
+import { QUERIES } from '../../constants';
 
 function Footer() {
   return (
@@ -40,6 +41,13 @@ const FooterWrapper = styled.footer`
   flex-direction: column;
   align-items: center;
   gap: 33px;
+
+  @media ${QUERIES.tabletAndUp} {
+    padding: 72px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
 `;
 
 const Logo = styled.img`
