@@ -61,11 +61,16 @@ const PortraitPicture = styled.picture`
   @media ${QUERIES.tabletAndUp} {
     display: revert;
     position: absolute;
-    top: -43px;
+    top: -88px;
     right: 0px;
     z-index: 1;
     text-align: right;
     width: 277px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    top: -103px;
+    width: min(45%, 350px);
   }
 `;
 

@@ -39,20 +39,30 @@ const HeroWrapper = styled.main`
   padding: 56px 16px 0 16px;
 
   @media ${QUERIES.tabletAndUp} {
-    padding: 123px 40px 0 40px;
+    padding: 168px 40px 0 40px;
     isolation: isolate;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 170px 165px 0px 165px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 1500px;
   }
 `;
 
 const TextWrapper = styled.div`
+  
   @media ${QUERIES.tabletAndUp} {
     position: relative;
-    width: 100%;
+    max-width: 700px;
+
+  @media ${QUERIES.laptopAndUp} {
+    max-width: 860px;
+  }
 `;
 
-const H1Wrapper = styled.div`
-  padding-top: 28px;
-`;
+const H1Wrapper = styled.div``;
 
 const H1 = styled.h1`
   display: inline;
@@ -64,6 +74,10 @@ const H1 = styled.h1`
     position: relative;
     z-index: 2;
     letter-spacing: -0.04863rem;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-h1-desktop);
   }
 `;
 
@@ -77,6 +91,11 @@ const H1B = styled.p`
     font: var(--font-h1-tablet);
     font-weight: var(--font-weight-bold);
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-h1-desktop);
+    font-weight: var(--font-weight-bold);
+  }
 `;
 
 const CurvedLine = styled.img`
@@ -86,18 +105,30 @@ const CurvedLine = styled.img`
   width: 151.5px;
 
   @media ${QUERIES.tabletAndUp} {
+    top: -45px;
     width: 231px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    top: -60px;
+    width: 287px;
   }
 `;
 
 const P = styled.p`
+  margin-top: 32px;
   font: var(--font-body-mobile);
   color: var(--color-gray);
-  margin-top: 32px;
 
   @media ${QUERIES.tabletAndUp} {
+    margin-top: 40px;
     font: var(--font-body-tablet);
     max-width: 50%;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    font: var(--font-body-desktop);
+    max-width: 340px;
   }
 `;
 
@@ -116,6 +147,14 @@ const HeroButton = styled(Button)`
       var(--color-pink) 50%,
       var(--color-orange) 100%
     );
+  }
+
+  @media ${QUERIES.tabletAndUp} {
+    margin-top: 40px;
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 52px;
   }
 `;
 

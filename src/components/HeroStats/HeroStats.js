@@ -31,7 +31,13 @@ const Stats = styled.section`
     margin-top: 128px;
     flex-direction: row;
     justify-content: space-around;
-    
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    margin-top: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;
 

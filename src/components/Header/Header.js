@@ -24,6 +24,10 @@ const HeaderWrapper = styled.header`
   @media ${QUERIES.tabletAndUp} {
     padding: 40px 40px 0px 40px;
   }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 50px 165px 0px 165px;
+  }
 `;
 
 const Logo = styled.img``;
