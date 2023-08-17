@@ -30,13 +30,14 @@ const Stats = styled.section`
   @media ${QUERIES.tabletAndUp} {
     margin-top: 128px;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    width: 100%;
   }
 
   @media ${QUERIES.laptopAndUp} {
     margin-top: 0;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
   }
 `;
@@ -46,6 +47,10 @@ const Stat = styled.article`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media ${QUERIES.laptopAndUp} {
+    align-items: flex-start;
+  }
 `;
 
 const StatNum = styled.span`

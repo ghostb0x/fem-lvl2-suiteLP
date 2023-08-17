@@ -129,12 +129,16 @@ const ImageWrapper = styled.div`
 `;
 
 const BlurImage = styled.img`
-  display: revert;
-  position: absolute;
-  right: -34%;
-  top: 20%;
-  width: 420px;
-  z-index: 1;
+  display: none;
+
+  @media ${QUERIES.tabletAndUp} {
+    display: revert;
+    position: absolute;
+    right: -34%;
+    top: 20%;
+    width: 420px;
+    z-index: 1;
+  }
 
   @media ${QUERIES.laptopAndUp} {
     width: 620px;

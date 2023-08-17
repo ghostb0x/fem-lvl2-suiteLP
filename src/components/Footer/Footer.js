@@ -46,7 +46,10 @@ const FooterWrapper = styled.footer`
     padding: 72px 40px;
     flex-direction: row;
     justify-content: space-between;
-    
+  }
+
+  @media ${QUERIES.laptopAndUp} {
+    padding: 95px 165px 72px 165px;
   }
 `;
 

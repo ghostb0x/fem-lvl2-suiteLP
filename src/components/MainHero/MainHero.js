@@ -41,6 +41,9 @@ const HeroWrapper = styled.main`
   @media ${QUERIES.tabletAndUp} {
     padding: 168px 40px 0 40px;
     isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   @media ${QUERIES.laptopAndUp} {
