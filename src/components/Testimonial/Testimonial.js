@@ -162,7 +162,6 @@ const LargePicture = styled.picture`
     position: relative;
     z-index: 2;
     flex: 1;
-    /* min-width: 360px; */
   }
 `;
 
@@ -211,7 +210,7 @@ const H2 = styled.h2`
   }
 `;
 
-const H2B = styled.p`
+const H2B = styled.em`
   font: var(--font-h2-mobile);
   font-weight: var(--font-weight-bold);
   display: inline;
@@ -222,7 +221,7 @@ const H2B = styled.p`
   }
 `;
 
-const Quote = styled.p`
+const Quote = styled.blockquote`
   margin-top: 40px;
   font: var(--font-quote-mobile);
   color: var(--color-cream);

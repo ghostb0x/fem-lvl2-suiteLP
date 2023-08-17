@@ -35,7 +35,7 @@ function MainHero() {
   );
 }
 
-const HeroWrapper = styled.main`
+const HeroWrapper = styled.section`
   padding: 56px 16px 0 16px;
 
   @media ${QUERIES.tabletAndUp} {
@@ -84,7 +84,7 @@ const H1 = styled.h1`
   }
 `;
 
-const H1B = styled.p`
+const H1B = styled.em`
   position: relative;
   font: var(--font-h1-mobile);
   font-weight: var(--font-weight-bold);

@@ -9,8 +9,10 @@ function App() {
   return (
     <Wrapper>
       <Header />
-      <MainHero />
-      <Testimonial />
+      <main>
+        <MainHero />
+        <Testimonial />
+      </main>
       <Footer />
     </Wrapper>
   );
@@ -18,7 +20,6 @@ function App() {
 
 const Wrapper = styled.div`
   background-color: var(--color-white);
-
 `;
 
 export default App;
