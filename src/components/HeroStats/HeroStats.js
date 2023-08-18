@@ -39,6 +39,7 @@ const Stats = styled.section`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    gap: 63px;
   }
 `;
 

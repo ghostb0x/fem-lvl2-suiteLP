@@ -194,6 +194,7 @@ const TextWrapper = styled.div`
   align-items: center;
 
   @media ${QUERIES.laptopAndUp} {
+    margin-top: 88px;
     text-align: start;
     align-items: flex-start;
     padding-bottom: 88px;
